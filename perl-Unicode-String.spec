@@ -2,9 +2,9 @@
 Summary:	Unicode-String perl module
 Summary(pl):	Modu³ perla Unicode-String
 Name:		perl-Unicode-String
-Version:	2.02
-Release:	3
-Copyright:	GPL
+Version:	2.05
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unicode/Unicode-String-%{version}.tar.gz
