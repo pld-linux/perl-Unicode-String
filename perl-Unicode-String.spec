@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Unicode
 %define	pnam	String
-Summary:	Unicode-String perl module
-Summary(pl):	Modu³ perla Unicode-String
+Summary:	Unicode::String perl module
+Summary(pl):	Modu³ perla Unicode::String
 Name:		perl-Unicode-String
 Version:	2.06
 Release:	5
@@ -15,10 +15,10 @@ BuildRequires:	perl-MIME-Base64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Unicode-String perl module.
+Unicode::String perl module.
 
 %description -l pl
-Modu³ perla Unicode-String.
+Modu³ perla Unicode::String.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
