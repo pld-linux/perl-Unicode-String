@@ -3,7 +3,7 @@ Summary:	Unicode-String perl module
 Summary(pl):	Modu³ perla Unicode-String
 Name:		perl-Unicode-String
 Version:	2.06
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
