@@ -28,7 +28,7 @@ Modu³ Perla Unicode::String - klasa ci±gu unikodowych znaków
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
