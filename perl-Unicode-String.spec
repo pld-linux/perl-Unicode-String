@@ -2,7 +2,7 @@
 Summary:	Unicode-String perl module
 Summary(pl):	Modu³ perla Unicode-String
 Name:		perl-Unicode-String
-Version:	2.05
+Version:	2.06
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -37,7 +37,7 @@ strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/Unicode/String/*.so
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Unicode/String
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
