@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Unicode
 %define	pnam	String
-%include	/usr/lib/rpm/macros.perl
 Summary:	Unicode-String perl module
 Summary(pl):	Modu³ perla Unicode-String
 Name:		perl-Unicode-String
 Version:	2.06
-Release:	4
-
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Unicode-String perl module.
 Modu³ perla Unicode-String.
 
 %prep
-%setup -q -n Unicode-String-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
