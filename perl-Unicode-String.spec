@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Unicode-String perl module
 Summary(pl):	Modu³ perla Unicode-String
 Name:		perl-Unicode-String
@@ -7,11 +8,11 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unicode/Unicode-String-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-MIME-Base64
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-Requires:	perl-MIME-Base64
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -25,7 +26,7 @@ Modu³ perla Unicode-String.
 
 %build
 perl Makefile.PL
-make
+make OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
