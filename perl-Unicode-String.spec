@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Unicode
-%define	pnam	String
+%define		pdir	Unicode
+%define		pnam	String
 Summary:	Unicode::String perl module
 Summary(pl):	Modu³ perla Unicode::String
 Name:		perl-Unicode-String
