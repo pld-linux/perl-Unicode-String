@@ -9,16 +9,18 @@ Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
-BuildRequires:	perl-MIME-Base64
+BuildRequires:	perl-MIME-Base64 >= 2.00
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Unicode::String perl module.
+Unicode::String Perl module - String of Unicode characters
+(UCS2/UTF16).
 
 %description -l pl
-Modu³ perla Unicode::String.
+Modu³ Perla Unicode::String - klasa ci±gu unikodowych znaków
+(UCS2/UTF16).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -32,14 +34,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changes README
 %{perl_sitearch}/Unicode/CharName.pm
 %{perl_sitearch}/Unicode/String.pm
 %dir %{perl_sitearch}/auto/Unicode/String
