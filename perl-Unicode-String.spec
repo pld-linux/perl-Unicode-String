@@ -8,13 +8,13 @@
 Summary:	Unicode::String perl module
 Summary(pl):	Modu³ perla Unicode::String
 Name:		perl-Unicode-String
-Version:	2.07
-Release:	2
+Version:	2.09
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d3658d0d1adbf69361771244ac88b237
+# Source0-md5:	553e68e603723bf7c631f8701ab0d678
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-MIME-Base64 >= 2.00
 BuildRequires:	rpm-perlprov >= 4.1-13
