@@ -6,7 +6,7 @@
 %define		pdir	Unicode
 %define		pnam	String
 Summary:	Unicode::String perl module
-Summary(pl):	Modu≥ perla Unicode::String
+Summary(pl.UTF-8):   Modu≈Ç perla Unicode::String
 Name:		perl-Unicode-String
 Version:	2.09
 Release:	1
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Unicode::String Perl module - String of Unicode characters
 (UCS2/UTF16).
 
-%description -l pl
-Modu≥ Perla Unicode::String - klasa ci±gu unikodowych znakÛw
+%description -l pl.UTF-8
+Modu≈Ç Perla Unicode::String - klasa ciƒÖgu unikodowych znak√≥w
 (UCS2/UTF16).
 
 %prep
