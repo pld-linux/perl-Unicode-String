@@ -6,7 +6,7 @@
 %define		pdir	Unicode
 %define		pnam	String
 Summary:	Unicode::String perl module
-Summary(pl.UTF-8):   Moduł perla Unicode::String
+Summary(pl.UTF-8):	Moduł perla Unicode::String
 Name:		perl-Unicode-String
 Version:	2.09
 Release:	1
