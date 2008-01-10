@@ -36,6 +36,7 @@ Moduł Perla Unicode::String - klasa ciągu unikodowych znaków
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
