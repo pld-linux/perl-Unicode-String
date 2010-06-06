@@ -9,7 +9,7 @@ Summary:	Unicode::String perl module
 Summary(pl.UTF-8):	Moduł perla Unicode::String
 Name:		perl-Unicode-String
 Version:	2.09
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
