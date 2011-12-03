@@ -13,7 +13,7 @@ Release:	7
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Unicode/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	553e68e603723bf7c631f8701ab0d678
 URL:		http://search.cpan.org/dist/Unicode-String/
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -58,4 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/Unicode/String
 %{perl_vendorarch}/auto/Unicode/String/String.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Unicode/String/String.so
-%{_mandir}/man3/*
+%{_mandir}/man3/Unicode::CharName.3pm*
+%{_mandir}/man3/Unicode::String.3pm*
