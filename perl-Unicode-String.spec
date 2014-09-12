@@ -56,7 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Unicode/CharName.pm
 %{perl_vendorarch}/Unicode/String.pm
 %dir %{perl_vendorarch}/auto/Unicode/String
-%{perl_vendorarch}/auto/Unicode/String/String.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Unicode/String/String.so
 %{_mandir}/man3/Unicode::CharName.3pm*
 %{_mandir}/man3/Unicode::String.3pm*
