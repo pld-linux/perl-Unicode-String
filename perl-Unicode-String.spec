@@ -8,15 +8,14 @@
 Summary:	Unicode::String perl module
 Summary(pl.UTF-8):	Moduł perla Unicode::String
 Name:		perl-Unicode-String
-Version:	2.09
-Release:	17
+Version:	2.10
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Unicode/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	553e68e603723bf7c631f8701ab0d678
-Patch0:		undefined.patch
-Patch1:		utf8doc.patch
+# Source0-md5:	7a8210e673824b9fb90fd1c360483890
+Patch0:		utf8doc.patch
 URL:		http://search.cpan.org/dist/Unicode-String/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-MIME-Base64 >= 2.00
@@ -34,7 +33,6 @@ Moduł Perla Unicode::String - klasa ciągu unikodowych znaków
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 %patch0 -p1
-%patch1 -p1
 
 %build
 %{__perl} Makefile.PL \
